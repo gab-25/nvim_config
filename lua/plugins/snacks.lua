@@ -8,6 +8,12 @@ return {
           ignored = true, -- show gitignored files
           exclude = { ".git" }, -- but never the .git directory
         },
+        files = {
+          hidden = true, -- include dotfiles/dotdirs (e.g. .github/)
+        },
+        grep = {
+          hidden = true, -- search inside dotfiles too
+        },
       },
     },
   },
